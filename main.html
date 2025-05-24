@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Jounal</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <div class="header-title">TRADING JOURNAL</div>
+    <div class="header-slogan">Self-analysis</div>
+  </header>
+
+  <main>
+    <div class="ingreso-de-informacion">
+      <div class="capital-container"> 
+        <input class="capital-input" placeholder="CAPITAL - OPERATIVA">
+        <div class="tooltip-capital">Monto mayor que cero</div>
+      </div>
+      <div class="fecha-container">
+        <input class="fecha-input" placeholder="FECHA(DD/MM/YYYY)">
+        <div class="tooltip-fecha">Ingrese fecha y formato válidos</div>
+      </div>
+        <button class="ingresar-button">INGRESAR</button>
+      <div class="info-container">
+      <div class="img-container">
+        <img class="info-img"  src="/img/informacion.png">
+        <div class="tooltip-info">
+            <p>El primer valor que ingrese será su capital inicial.</p>
+            <p>Los siguientes montos se aplicarán sobre dicho capital.</p>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+
+
+    <div class="grid-container-canvas">
+      <div class="container-canvas">
+        <canvas id="grafico"></canvas>
+      </div>
+    </div>
+    <div class="grid-bottom-container">
+      <div class="bottom-grid">
+        <button class="button-eliminar-anterior">ELIMINAR ANTERIOR</button>
+        <button class="button-eliminar">BORRAR HISTORIAL</button>
+      </div>
+    </div>
+        <div class="mensaje-dinamico"></div>
+    </div>
+
+    <div class="historial-container">
+      <div class="historial-rows">
+      
+
+      </div>
+    </div>
+  </main>
+
+  
+</body>
+<script type="module" src="./script/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://unpkg.com/dayjs@1/plugin/customParseFormat.js"></script>
+
+
+</html>

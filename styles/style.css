@@ -1,0 +1,263 @@
+body {
+ font-family: "Red Hat Display", sans-serif;
+ background-color: rgba(245, 245, 220, 0.64);
+}
+
+header{
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin: -10px;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header-title{
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.header-slogan{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.ingreso-de-informacion{
+  display: flex;
+  grid-template-columns: 150px 150px;
+  background-color: antiquewhite;
+  justify-content: center;
+  margin: -10px;
+  padding: 10px;
+  column-gap: 30px;
+  padding-left: 30px;
+}
+
+
+.ingreso-de-informacion input{
+  font-family:"Red Hat Display", sans-serif;
+  padding: 10px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color:black;
+  width: 150px
+}
+.capital-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+
+.tooltip-capital{
+  position:absolute;
+  opacity: 1;
+  bottom: -50px;
+  left: 32px;
+  background-color: rgba(0, 0, 0, 0.416);
+  color: white;
+  padding: 5px;
+  border-radius:5px;
+  font-family:"Red Hat Display", sans-serif;
+  width: 100px;
+  text-align: center;  
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-capital-on{
+  opacity: 1;
+}
+
+.fecha-container{
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+
+}
+.tooltip-fecha{
+  position:absolute;
+  opacity: 1;
+  bottom: -50px;
+  left: 32px;
+  background-color: rgba(0, 0, 0, 0.416);
+  color: white;
+  padding: 5px;
+  border-radius:5px;
+  font-family:"Red Hat Display", sans-serif;
+  width: 100px;
+  text-align: center;  
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-fecha-on{
+  opacity: 1;
+}
+
+.ingreso-de-informacion button{
+  font-family:"Red Hat Display", sans-serif;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: solid;
+    
+  transition: background-color 0.5s, color 0.5s, font-weight 0.5s, border-style 0.5s;
+
+}
+
+.ingreso-de-informacion button:hover{
+   color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.grid-container-canvas{
+  display: grid;
+  width: 1fr;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.container-canvas{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  height: 300px;
+  width: 600px;
+  align-items: center;
+}
+
+#grafico{
+    height: 300px;
+    width: 500px;
+}
+
+.grid-bottom-container{
+  display: grid;
+  justify-content: center;
+}
+
+.bottom-grid{
+  display: grid;
+  grid-template-columns: 170px 170px;
+  justify-content: space-between;
+  width: 360px;
+}
+
+.bottom-grid button{
+  width: 170px;
+  padding: 10px 1px 10px 1px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: black;
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+
+  transition: background-color 0.5s, color 0.5s, font-weight 0.5s, border-style 0.5s;
+}
+
+.bottom-grid button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-style: solid;
+
+}
+
+.img-container{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 20px;
+  right: 40px;
+  top: 67px;
+
+}
+
+.info-img{
+
+  width: 20px;
+  height: 20px;
+
+}
+
+.tooltip-info{
+  display: grid;
+  position: fixed;
+  right: 90px;
+  height: 40px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.tooltip-info p{
+display: block;
+font-style: italic;
+margin: 0px;
+text-align: right;
+
+}
+
+.img-container:hover .tooltip-info{
+
+  opacity: 1;
+
+}
+
+.mensaje-dinamico{
+  display: grid;
+  justify-content: center;
+  margin-top: 25px;
+
+}
+
+.historial-container{
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.historial-rows{
+  display: grid;
+  grid-template-rows: 35px 35px 35px 35px 35px;
+  max-height: 175px;
+  row-gap: 0;
+    overflow-y: auto; 
+    overflow-x: hidden;       
+  vertical-align: center;
+
+
+}
+
+.historial{
+  display: flex;
+  width: 400px;
+  height: 35px;
+  background-color: white;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 10px;
+  justify-content: space-between;
+  
+}
+
+
+
+
+
+
+

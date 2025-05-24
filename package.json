@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chart.js": "^4.4.9",
+    "lightweight-charts": "^5.0.6"
+  }
+}
