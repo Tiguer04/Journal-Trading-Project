@@ -1,8 +1,9 @@
-# My first proyect
-## This is my first proyect with almost three months learning programming, using --> HTML --> CSS --> JavaScript.
-### Explanation --> Daily I make trading, so I wanted to create a interactive chart where I can see my results month by month.
+# 🧩  Journal Trading Project  🧩
+
+### 🔵 Context: Daily I make trading, so I wanted to create a interactive chart where I can see my results month by month.
 
 ### ⬇️ INSTRUCTIONS ⬇️
+
 ###  INPUTS ⬇️
 #### There is two inputs, the first contain the quantity of the operation (the capital, when you lose or when you win).
 ####  - The fisrt value, you put into this input, will be the `Initial Capital Value`.
@@ -21,7 +22,7 @@
 #### When you put information in the Chart, it will be appear too in the bottom from the page, in the following structure ⬇️
 ####                                                              (date: DD/MM/YYY............(Value putted in the input)  
 ####                                                              |  20/04/2000.................................... $10  |
-####                                                              |  21/04/2000.................................... $-1  |
+####                                                              |  21/04/2000.................................... $-1   |
 ####                                                              |  22/04/2000.................................... $-5  |
 #### It will be also delete, when you press "ELIMINAR" or "BORRAR HISTORIAL", dynamically.
 
