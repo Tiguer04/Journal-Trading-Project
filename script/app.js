@@ -90,7 +90,6 @@ window.miGrafico = new Chart(ctx, {
 });
 
 
-
 /*End Chart.js sintax*/ 
 
 const regexCapital = /^(?![&*_$%()/!¿¡?'{}]).*\d+$/; // The amount must be entered with that structure;
@@ -117,10 +116,7 @@ container.innerHTML = JSON.parse(localStorage.getItem('historial')) || '';
 
 /* All the validations will be made when we click the "ingresar" button */
 
-
 botonDeIngreso.addEventListener('click', () =>{
-
-
 
 if(miGrafico.data.datasets[0].data.length === 0 && inputCapital.value <= 0){
       
@@ -271,13 +267,11 @@ if(!inputCapital.value.match(regexCapital)){
     }
 
     
-    function numero(){
+  function numero(){
       const numeroRandom = Math.random();
       return numeroRandom;
 
-    }
-
-
+  }
 
   }
 
@@ -301,8 +295,6 @@ botonDeEliminarHistorial.addEventListener('click', () =>{
   miGrafico.data.datasets[0].data = []
   miGrafico.data.labels = []
           
-  console.log(miGrafico.data.datasets[0].data);
-
   container.innerHTML = '';
   html = container.innerHTML;
 
@@ -310,14 +302,13 @@ botonDeEliminarHistorial.addEventListener('click', () =>{
 
 })
 
-  const botonDeEliminarUltimo = document.querySelector('.button-eliminar-anterior');
+const botonDeEliminarUltimo = document.querySelector('.button-eliminar-anterior');
 
 botonDeEliminarUltimo.addEventListener('click', () =>{
   const labels = miGrafico.data.labels;
   labels.pop();
   miGrafico.data.datasets[0].data.pop()
   
-
     const div = document.querySelector(`.historial-container-into-${acumuladorDiv}`);
     if (div) {
       div.remove();
@@ -328,21 +319,10 @@ botonDeEliminarUltimo.addEventListener('click', () =>{
 
     html = container.innerHTML;
 
-  console.log(container.innerHTML)
-  
-  console.log(html)
-
-  console.log(acumuladorDiv)
-
-
-
-
   saveToStorage();
   location.reload();
   
 })
-
-
 
  function saveToStorage(){
 
@@ -355,9 +335,6 @@ botonDeEliminarUltimo.addEventListener('click', () =>{
   localStorage.setItem('acumulador', JSON.stringify(acumuladorDiv))
 
 }
-
-
-
 
 }
 
